@@ -1,13 +1,13 @@
 """"
-student1_name = "Jasper"
+student1_name = "epot"
 student1_grade = "1.5"
 student1_subject = ["Calculus, Chemistry"]
 
-student2_name = "Mark"
+student2_name = "bea"
 student2_grade = "2.0"
 student2_subject = ["Basic Electronics, Biology"]
 
-student3_name = "Kurt"
+student3_name = "ewan"
 student3_grade = "1.0"
 student3_subject = ["Mathematics, Statistics"]
 
@@ -42,14 +42,14 @@ class Student:
 
 
 if __name__ == "__main__":
-    student1 = Student("Matt", 1.75, ["Physics", "Programming"])
+    student1 = Student("p1", 1.75, ["Physics", "Programming"])
     student1.print_student_info_method()
     if Student.is_grade_passing(student1.grade):
         print("Passed")
     else:
         print("Failed")
 
-    student2 = Student("Jordan", 2.00, ["Entrepreneurship", "PE"])
+    student2 = Student("p2", 2.00, ["Entrepreneurship", "PE"])
     student2.print_student_info_method()
     if Student.is_grade_passing(student2.grade):
         print("Passed")
@@ -57,14 +57,14 @@ if __name__ == "__main__":
         print("Failed")
 
 
-    student3 = Student("Kenneth", 3.00, ["UTS", "Science"])
+    student3 = Student("p3", 3.00, ["UTS", "Science"])
     student3.print_student_info_method()
     if Student.is_grade_passing(student3.grade):
         print("Passed")
     else:
         print("Failed")
 
-    student4 = Student.create_default_student( "Jaylo", 3.5)
+    student4 = Student.create_default_student( "p4", 3.5)
     if Student.is_grade_passing(student4.grade):
         print("Passed")
     else:
